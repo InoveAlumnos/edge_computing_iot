@@ -17,14 +17,21 @@ Instalar las dependencias de python para esta clase:
 $ python3 -m pip install -r requirements.txt
 ```
 
-Instalar 
+Instalar tesseract
 ```sh
 $ sudo apt-get update
 $ sudo apt-get install -y tesseract-ocr
 $ sudo apt-get install -y tesseract-ocr-spa
 ```
 
-En este repositorio encontrarán los siguientes archivos:
+Habilitar websockets en mosquitto
+```sh
+$ sudo touch /etc/mosquitto/conf.d/mosquitto.conf
+echo -e "allow_anonymous true\nlistener 1883 0.0.0.0\nallow_anonymous true\nlistener 9001\nprotocol websockets" | sudo tee /etc/mosquitto/conf.d/mosquitto.conf
+$ sudo service mosquitto restart
+```
+
+# En este repositorio encontrarán los siguientes archivos:
 
 __Ejemplos que el profesor mostrará en clase__\
 ejemplos_clase/

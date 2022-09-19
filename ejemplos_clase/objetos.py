@@ -124,7 +124,7 @@ class DetectorObjetos():
 
 
 if __name__ == "__main__":
-    yolo = DetectorObjectos('yolov3.weights', 'yolov3.cfg')
+    yolo = DetectorObjetos('yolov3.weights', 'yolov3.cfg')
     image = cv2.imread('objetos.jpg')
     detections = yolo(image).to_json()
     print(detections)

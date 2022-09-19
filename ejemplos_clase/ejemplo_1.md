@@ -97,3 +97,11 @@ http://<ip_VM>:5021
 Realizar una demostración de como funciona la cámara frontal y de atras, siempre mostrando los datos de video que llegan a "camera capture".
 - Lance el stream de video ni bien enciende la app en el celular, mostrar como las capturas de ese video se reflejan en "camera captura".
 - Repita el procedimiento pero cambie a cámara de atras tocando el botón verde antes de lanzar el stream de video (debe actualizar la página para que vuelva a aparecer el botón verde).
+
+### 6 - Dejamos todo funcionando en background
+Si ya ensayamos que ambas aplicaciones funcionan correctamente, podemos dejar el docker ejecutandose en background para que no tome la consola:
+- Primero cerramos / detenemos los contenedores actuales
+- Los relanzamos con el siguiente comando:
+```sh
+$ docker-compose start
+```

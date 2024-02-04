@@ -5,3 +5,4 @@ Flask-SocketIO==5.1.1
 paho-mqtt==1.6.1
 #opencv-python==4.4.0.44
 pytesseract==0.3.10
+Werkzeug==2.2.2

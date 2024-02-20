@@ -12,16 +12,17 @@ $ sudo apt-get update
 $ sudo apt-get install -y libopencv-dev python3-opencv
 ```
 
-Instalar las dependencias de python para esta clase:
-```sh
-$ python3 -m pip install -r requirements.txt
-```
-
 Instalar tesseract
 ```sh
 $ sudo apt-get update
 $ sudo apt-get install -y tesseract-ocr
 $ sudo apt-get install -y tesseract-ocr-spa
+```
+
+Instalar las dependencias de python para esta clase:
+```sh
+$ python3 -m pip install pillow
+$ python3 -m pip install pytesseract
 ```
 
 Habilitar websockets en mosquitto
